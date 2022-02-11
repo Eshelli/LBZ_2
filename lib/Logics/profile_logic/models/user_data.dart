@@ -1,5 +1,5 @@
-import 'package:libozzle/commen_models/models.dart';
-import 'package:libozzle/models/countries.dart';
+import 'package:lbz/commen_models/models.dart';
+import 'package:lbz/models/countries.dart';
 
 class UserData {
   int? id;

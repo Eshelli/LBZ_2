@@ -3,13 +3,13 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Screens/NewAd/post_details.dart';
-import 'package:libozzle/Screens/ads_list.dart';
-import 'package:libozzle/Screens/categories/model/categories_model.dart';
-import 'package:libozzle/all_controllers.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Screens/NewAd/post_details.dart';
+import 'package:lbz/Screens/ads_list.dart';
+import 'package:lbz/Screens/categories/model/categories_model.dart';
+import 'package:lbz/all_controllers.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
 
 import '../no_internet.dart';
 

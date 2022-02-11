@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/styles/colors.dart';
 import 'package:shimmer/shimmer.dart';
 
 Widget shimmerListItem() {

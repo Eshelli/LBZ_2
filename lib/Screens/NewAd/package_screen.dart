@@ -1,14 +1,14 @@
 import 'package:cross_file/src/types/interface.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/models/package.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/models/package.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../home_screen.dart';
 

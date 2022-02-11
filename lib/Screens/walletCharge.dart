@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class WalletCharge extends StatefulWidget {
   const WalletCharge({Key? key}) : super(key: key);

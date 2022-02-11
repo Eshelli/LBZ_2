@@ -5,17 +5,17 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/Screens/components/shimmers.dart';
-import 'package:libozzle/Screens/filter/filter.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/models/ads_list.dart';
-import 'package:libozzle/models/cat_parent.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/Screens/components/shimmers.dart';
+import 'package:lbz/Screens/filter/filter.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/models/ads_list.dart';
+import 'package:lbz/models/cat_parent.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import 'ad_screen.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/login_register_logic/login_register_controller.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/login_register_logic/login_register_controller.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class RegisterScreen extends StatelessWidget {
   RegisterScreen({Key? key}) : super(key: key);

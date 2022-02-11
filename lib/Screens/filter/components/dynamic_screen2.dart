@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/models/cat.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/models/cat.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
 
 class DynamicScreen2 extends StatelessWidget {
   String catName;

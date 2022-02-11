@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:libozzle/commen_models/models.dart';
+import 'package:lbz/commen_models/models.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class FormOfList extends StatefulWidget {

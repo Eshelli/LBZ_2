@@ -1,4 +1,4 @@
-import 'package:libozzle/commen_models/models.dart';
+import 'package:lbz/commen_models/models.dart';
 
 class Messages {
   Messages({

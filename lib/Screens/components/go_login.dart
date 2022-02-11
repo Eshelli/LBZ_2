@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 Widget goLogin(){
   return Column(

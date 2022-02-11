@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/chat_logic/chat_controller.dart';
-import 'package:libozzle/Screens/chat/components/text_message.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/chat_logic/chat_controller.dart';
+import 'package:lbz/Screens/chat/components/text_message.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/styles/colors.dart';
 import 'components/chat_input_field.dart';
 
 class ChatScreen extends StatefulWidget {

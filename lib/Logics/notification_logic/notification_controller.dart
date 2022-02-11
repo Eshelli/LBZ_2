@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Screens/notification/model/notification_model.dart';
-import 'package:libozzle/commen_models/errors_models.dart';
-import 'package:libozzle/shared/components/constans.dart';
+import 'package:lbz/Screens/notification/model/notification_model.dart';
+import 'package:lbz/commen_models/errors_models.dart';
+import 'package:lbz/shared/components/constans.dart';
 
 class NotificationController extends GetxController {
   var notiIsLoading = false.obs;

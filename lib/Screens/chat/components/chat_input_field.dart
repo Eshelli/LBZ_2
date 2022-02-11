@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/chat_logic/chat_controller.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/chat_logic/chat_controller.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class ChatInputField extends StatefulWidget {
   final String id;

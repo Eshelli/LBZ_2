@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/utils.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Screens/no_internet.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/methods.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Screens/no_internet.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/methods.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class HomeScreen extends StatelessWidget {
   @override

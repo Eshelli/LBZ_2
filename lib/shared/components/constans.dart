@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:libozzle/Screens/filter/filter.dart';
-import 'package:libozzle/shared/network/remote/dio_helper.dart';
+import 'package:lbz/Screens/filter/filter.dart';
+import 'package:lbz/shared/network/remote/dio_helper.dart';
 import 'package:http_parser/http_parser.dart';
 
 var taxonomySlug;

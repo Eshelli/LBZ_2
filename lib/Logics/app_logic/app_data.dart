@@ -1,16 +1,16 @@
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
-import 'package:libozzle/Screens/categories/model/categories_model.dart';
-import 'package:libozzle/models/cat.dart';
-import 'package:libozzle/models/cities.dart';
-import 'package:libozzle/models/countries.dart';
-import 'package:libozzle/models/login_status.dart';
-import 'package:libozzle/models/ad_details.dart';
-import 'package:libozzle/models/ads_list.dart';
-import 'package:libozzle/models/attributes.dart';
-import 'package:libozzle/models/cat_parent.dart';
-import 'package:libozzle/models/package.dart';
-import 'package:libozzle/models/popular_ads.dart';
-import 'package:libozzle/models/section_model.dart';
+import 'package:lbz/Screens/categories/model/categories_model.dart';
+import 'package:lbz/models/cat.dart';
+import 'package:lbz/models/cities.dart';
+import 'package:lbz/models/countries.dart';
+import 'package:lbz/models/login_status.dart';
+import 'package:lbz/models/ad_details.dart';
+import 'package:lbz/models/ads_list.dart';
+import 'package:lbz/models/attributes.dart';
+import 'package:lbz/models/cat_parent.dart';
+import 'package:lbz/models/package.dart';
+import 'package:lbz/models/popular_ads.dart';
+import 'package:lbz/models/section_model.dart';
 
 class AppData{
   var counter =0.obs;

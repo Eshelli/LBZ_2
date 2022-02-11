@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/login_register_logic/models/login.dart';
-import 'package:libozzle/Screens/home_screen.dart';
-import 'package:libozzle/commen_models/errors_models.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/network/local/cache_helper.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/login_register_logic/models/login.dart';
+import 'package:lbz/Screens/home_screen.dart';
+import 'package:lbz/commen_models/errors_models.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/network/local/cache_helper.dart';
 import 'models/register.dart';
 
 class LoginRegisterController extends GetxController {

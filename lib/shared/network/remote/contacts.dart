@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
 
 const String taxonomies = 'taxonomies';
 const String popularAds = 'popular-ads';

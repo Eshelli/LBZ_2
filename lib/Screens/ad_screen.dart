@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/fav_logic/fav_controller.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/models/ads_list.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/network/remote/contacts.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/fav_logic/fav_controller.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/models/ads_list.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/network/remote/contacts.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class AdScreen extends StatefulWidget {
   const AdScreen({Key? key}) : super(key: key);

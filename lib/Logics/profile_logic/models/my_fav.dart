@@ -1,5 +1,5 @@
-import 'package:libozzle/commen_models/models.dart';
-import 'package:libozzle/models/cat.dart';
+import 'package:lbz/commen_models/models.dart';
+import 'package:lbz/models/cat.dart';
 
 class MyFavList {
   List<MyFavData> data = [];

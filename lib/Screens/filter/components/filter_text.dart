@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class FilterText extends StatelessWidget {
   var txtController = TextEditingController();

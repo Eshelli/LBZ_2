@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/search_item.dart';
-import 'package:libozzle/Screens/home/profile.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/search_item.dart';
+import 'package:lbz/Screens/home/profile.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../../all_controllers.dart';
 import '../no_internet.dart';

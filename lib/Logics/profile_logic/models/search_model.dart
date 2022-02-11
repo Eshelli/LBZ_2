@@ -1,6 +1,6 @@
 
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
-import 'package:libozzle/commen_models/models.dart';
+import 'package:lbz/commen_models/models.dart';
 
 class MySearch {
   MySearch({

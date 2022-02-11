@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/notification_logic/notification_controller.dart';
-import 'package:libozzle/Screens/notification/components/noti_item.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/notification_logic/notification_controller.dart';
+import 'package:lbz/Screens/notification/components/noti_item.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../../all_controllers.dart';
 import '../no_internet.dart';

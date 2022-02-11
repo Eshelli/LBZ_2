@@ -4,15 +4,15 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/fav_logic/fav_controller.dart';
-import 'package:libozzle/Logics/profile_logic/models/my_fav.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/Screens/no_internet.dart';
-import 'package:libozzle/all_controllers.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/fav_logic/fav_controller.dart';
+import 'package:lbz/Logics/profile_logic/models/my_fav.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/Screens/no_internet.dart';
+import 'package:lbz/all_controllers.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 
 class FavForm extends StatefulWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Screens/login/login_screen.dart';
-import 'package:libozzle/Screens/login/register_screen.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Screens/login/login_screen.dart';
+import 'package:lbz/Screens/login/register_screen.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../home_screen.dart';
 

@@ -2,13 +2,13 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/profile_logic/models/my_fav.dart';
-import 'package:libozzle/Screens/login/main_login_screen.dart';
-import 'package:libozzle/all_controllers.dart';
-import 'package:libozzle/commen_models/errors_models.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/network/remote/contacts.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/profile_logic/models/my_fav.dart';
+import 'package:lbz/Screens/login/main_login_screen.dart';
+import 'package:lbz/all_controllers.dart';
+import 'package:lbz/commen_models/errors_models.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/network/remote/contacts.dart';
 
 class FavController extends GetxController {
   var isLoading = false.obs;

@@ -6,9 +6,9 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_navigation/src/snackbar/snackbar.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/commen_models/errors_models.dart';
-import 'package:libozzle/shared/components/constans.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/commen_models/errors_models.dart';
+import 'package:lbz/shared/components/constans.dart';
 import '../../../all_controllers.dart';
 
 class DioHelper {

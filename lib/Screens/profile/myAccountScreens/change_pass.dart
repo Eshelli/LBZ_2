@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/components.dart';
-import 'package:libozzle/shared/components/varibales_combonents.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/components.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class ChangePass extends StatelessWidget {
   ChangePass({Key? key}) : super(key: key);

@@ -1,20 +1,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/app_logic/app_controller.dart';
-import 'package:libozzle/Logics/profile_logic/profile_controller.dart';
-import 'package:libozzle/Screens/components/go_login.dart';
-import 'package:libozzle/Screens/login/login_screen.dart';
-import 'package:libozzle/Screens/login/main_login_screen.dart';
-import 'package:libozzle/Screens/profile/change_lang.dart';
-import 'package:libozzle/Screens/profile/my_account.dart';
-import 'package:libozzle/Screens/profile/my_ads.dart';
-import 'package:libozzle/Screens/profile/saved_search.dart';
-import 'package:libozzle/all_controllers.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/network/local/cache_helper.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/profile_logic/profile_controller.dart';
+import 'package:lbz/Screens/components/go_login.dart';
+import 'package:lbz/Screens/login/login_screen.dart';
+import 'package:lbz/Screens/login/main_login_screen.dart';
+import 'package:lbz/Screens/profile/change_lang.dart';
+import 'package:lbz/Screens/profile/my_account.dart';
+import 'package:lbz/Screens/profile/my_ads.dart';
+import 'package:lbz/Screens/profile/saved_search.dart';
+import 'package:lbz/all_controllers.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/network/local/cache_helper.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../no_internet.dart';
 

@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
-import 'package:libozzle/Logics/notification_logic/notification_controller.dart';
-import 'package:libozzle/Screens/notification/model/notification_model.dart';
-import 'package:libozzle/assets/flaticon_icons.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/notification_logic/notification_controller.dart';
+import 'package:lbz/Screens/notification/model/notification_model.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 class NotiItem extends StatefulWidget {
   final NotiData data;

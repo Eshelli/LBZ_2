@@ -2,8 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:libozzle/shared/components/constans.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/styles/colors.dart';
 import 'myAccountScreens/compony_screen.dart';
 import 'myAccountScreens/user_screen.dart';
 

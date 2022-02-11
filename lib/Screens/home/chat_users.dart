@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:libozzle/Logics/chat_logic/chat_controller.dart';
-import 'package:libozzle/Logics/chat_logic/models/chat_model.dart';
-import 'package:libozzle/shared/styles/colors.dart';
+import 'package:lbz/Logics/chat_logic/chat_controller.dart';
+import 'package:lbz/Logics/chat_logic/models/chat_model.dart';
+import 'package:lbz/shared/styles/colors.dart';
 
 import '../chat/chat_screen.dart';
 
