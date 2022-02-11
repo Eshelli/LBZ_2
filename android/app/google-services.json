@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "832092139924",
+    "project_id": "libozzle-641cf",
+    "storage_bucket": "libozzle-641cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832092139924:android:e03e114c5f27b8a370df81",
+        "android_client_info": {
+          "package_name": "com.example.lbz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832092139924-2tta3qk90j373t7f1ha2dc4e0jvjll2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-fNqBS77zpApaWGpaRaSd1bEjn09ELwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832092139924-2tta3qk90j373t7f1ha2dc4e0jvjll2o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "832092139924-7o45u4uqn9m2b4dm08ip0et35kjbh7dl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.libozzle"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

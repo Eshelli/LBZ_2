@@ -20,21 +20,21 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
-  // var tok = await FirebaseMessaging.instance.getToken();
-  // print(tok);
-  //
-  // FirebaseMessaging.onMessage.listen((event) {
-  //   print(event.notification!.title);
-  //   print(event.data);
-  // });
-  //
-  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-  //
-  // FirebaseMessaging.onMessageOpenedApp.listen((event) {
-  //   print(event.notification!.title);
-  //   print(event.data);
-  // });
+  await Firebase.initializeApp();
+  var tok = await FirebaseMessaging.instance.getToken();
+  print(tok);
+
+  FirebaseMessaging.onMessage.listen((event) {
+    print(event.notification!.title);
+    print(event.data);
+  });
+
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+  FirebaseMessaging.onMessageOpenedApp.listen((event) {
+    print(event.notification!.title);
+    print(event.data);
+  });
 
   await CacheHelper.init();
   token = await CacheHelper.getData(key: 'token');
