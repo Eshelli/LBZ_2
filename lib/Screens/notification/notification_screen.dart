@@ -1,0 +1,57 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:libozzle/Logics/notification_logic/notification_controller.dart';
+import 'package:libozzle/Screens/notification/components/noti_item.dart';
+import 'package:libozzle/shared/components/varibales_combonents.dart';
+import 'package:libozzle/shared/styles/colors.dart';
+
+import '../../all_controllers.dart';
+import '../no_internet.dart';
+
+class NotificationScreen extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    Get.find<NotificationController>().getNotification();
+    var notiController = Get.find<NotificationController>();
+    var allController = Get.find<ALlControllers>();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My Notifications'),
+        centerTitle: true,
+        actions: [
+          TextButton(onPressed: (){
+            if(notiController.notiId.isEmpty){
+              dialog([
+                const Center(child: Text('الرجاء تحديد اشعارات'))
+              ]);
+            }else{
+              notiController.markNotificationAsRead();
+
+            }
+          }, child: Icon(Icons.remove_red_eye,color: Colors.black,))
+        ],
+      ),
+      body: Obx(() {
+        if (notiController.notiIsLoading.value) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+        if (allController.stateIs != 200) {
+          return Center(child: connectionState(allController.stateIs.value));
+        }
+        if(notiController.notification.data.isEmpty){
+          return const Center(
+              child:
+              Image(image: AssetImage('assets/image/sorry.gif')));
+        }
+        return ListView.separated(
+            itemBuilder: (context, index) => NotiItem(data: notiController.notification.data[index],),
+            separatorBuilder: (context, index) => Divider(height: 1,),
+            itemCount: notiController.notification.data.length);
+      }),
+    );
+  }
+}
