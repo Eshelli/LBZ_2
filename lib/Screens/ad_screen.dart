@@ -370,29 +370,7 @@ class _AdScreenState extends State<AdScreen> {
                 color1: redDefaultColor, color2: Colors.white),
             button('Chat', FlatIcon.message,onPress: ()async{
               await chatController.getChatId(appController.appData.adsDetails.user!.id);
-              dialog([
-                Text('Send your first message'),
-                defualtTextForm(context, controler: txtController, type: TextInputType.text, radius: 3),
-                Obx((){
-                  if(chatController.msgIsLoading.value){
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Center(child: CircularProgressIndicator(),),
-                    );
-                  }
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(height: 35,child: button('Send', Icons.send,color1: redDefaultColor,color2: Colors.white,onPress: (){
-                      if(txtController.text.isNotEmpty) {
-                        chatController.sendMSG(
-                            null, txtController.text, -200,
-                            chatController.chatId.user.id);
-                        Get.back();
-                      }
-                    })),
-                  );
-                }),
-              ]);
+
 
             }),
           ],

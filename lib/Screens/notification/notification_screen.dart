@@ -29,7 +29,6 @@ class NotificationScreen extends StatelessWidget {
               ]);
             }else{
               notiController.markNotificationAsRead();
-
             }
           }, child: Icon(Icons.remove_red_eye,color: Colors.black,))
         ],

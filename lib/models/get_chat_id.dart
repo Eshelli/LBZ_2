@@ -1,15 +1,11 @@
 import 'package:lbz/commen_models/models.dart';
 
 class GetChatId {
-  GetChatId({
-    required this.user,
-    required this.chat,
-  });
   late final User user;
   Chat? chat;
   GetChatId.fromJson(Map<String, dynamic> json){
     user = User.fromJson(json['user']);
-    chat = Chat.fromJson(json['chat']);
+    chat = json['chat'] ==null?null:Chat.fromJson(json['chat']);
   }
 }
 
@@ -50,20 +46,12 @@ class Chat {
   });
   late final String id;
   late final String date;
-  late final List<Users> users;
+  List<Users>? users;
 
   Chat.fromJson(Map<String, dynamic> json){
     id = json['id'];
     date = json['date'];
     users = List.from(json['users']).map((e)=>Users.fromJson(e)).toList();
-  }
-
-  Map<String, dynamic> toJson() {
-    final _data = <String, dynamic>{};
-    _data['id'] = id;
-    _data['date'] = date;
-    _data['users'] = users.map((e)=>e.toJson()).toList();
-    return _data;
   }
 }
 
