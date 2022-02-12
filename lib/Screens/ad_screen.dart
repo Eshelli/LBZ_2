@@ -395,7 +395,6 @@ class _AdScreenState extends State<AdScreen> {
                             chatController.sendMSG(
                                 null, txtController.text, -200,
                                 chatController.chatId.user.id);
-                            Get.back();
                           }
                         })),
                       );
