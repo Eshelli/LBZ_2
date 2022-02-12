@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lbz/Logics/notification_logic/notification_controller.dart';
 import 'package:lbz/Screens/notification/components/noti_item.dart';
+import 'package:lbz/assets/flaticon_icons.dart';
 import 'package:lbz/shared/components/varibales_combonents.dart';
 import 'package:lbz/shared/styles/colors.dart';
 
@@ -43,9 +44,22 @@ class NotificationScreen extends StatelessWidget {
           return Center(child: connectionState(allController.stateIs.value));
         }
         if(notiController.notification.data.isEmpty){
-          return const Center(
-              child:
-              Image(image: AssetImage('assets/image/sorry.gif')));
+          return Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  FlatIcon.empty_folder,
+                  color: Colors.black54,
+                  size: 100,
+                ),
+                Text(
+                  'There is no data to show',
+                  style: TextStyle(fontSize: 22, color: Colors.black54),
+                )
+              ],
+            ),
+          );
         }
         return ListView.separated(
             itemBuilder: (context, index) => NotiItem(data: notiController.notification.data[index],),

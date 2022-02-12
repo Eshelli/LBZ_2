@@ -35,6 +35,7 @@ class DioHelper {
       options: Options(
         validateStatus: (status) {
           if (status != null) {
+            print(status);
             allController.stateIs.value = status;
           }
           return status! < 500;
@@ -48,9 +49,12 @@ class DioHelper {
         },
       ),
     ).catchError((onError) {
-      if (onError is DioError) {
-        allController.stateIs.value = 0;
-      }
+      print(onError);
+      print(allController.stateIs.value);
+      // if (onError is DioError) {
+      //   allController.stateIs.value = 0;
+      //   print(allController.stateIs.value);
+      // }
     });
   }
 

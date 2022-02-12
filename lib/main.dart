@@ -20,27 +20,26 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  var tok = await FirebaseMessaging.instance.getToken();
-  print(tok);
-
-  FirebaseMessaging.onMessage.listen((event) {
-    print(event.notification!.title);
-    print(event.data);
-  });
-
-  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
-  FirebaseMessaging.onMessageOpenedApp.listen((event) {
-    print(event.notification!.title);
-    print(event.data);
-  });
-
+  // await Firebase.initializeApp();
+  // var tok = await FirebaseMessaging.instance.getToken();
+  // print(tok);
+  //
+  // FirebaseMessaging.onMessage.listen((event) {
+  //   print(event.notification!.title);
+  //   print(event.data);
+  // });
+  //
+  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+  //
+  // FirebaseMessaging.onMessageOpenedApp.listen((event) {
+  //   print(event.notification!.title);
+  //   print(event.data);
+  // });
   await CacheHelper.init();
   token = await CacheHelper.getData(key: 'token');
+  print(token);
   lang = await CacheHelper.getData(key: 'lang') ?? 'ar';
   Stripe.publishableKey = 'pk_test_51KDQFjKZkUlOvSwdbW9emSWKDGoKH4W3LaAVFvh2mStmIoWgjBbOuM536h9YeVecXi6DGYW47QYv5PgQSQ1Wmpz800LJcSpt7N';
-  // print(token);
   DioHelper.init();
   Widget startWidget;
 

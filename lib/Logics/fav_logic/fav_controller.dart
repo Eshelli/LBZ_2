@@ -22,7 +22,6 @@ class FavController extends GetxController {
     isLoading.value = true;
     favList = [];
     favListData = [];
-    print('value.data');
     allController.stateIs.value = 0;
     await dioHelper
         .getData(
