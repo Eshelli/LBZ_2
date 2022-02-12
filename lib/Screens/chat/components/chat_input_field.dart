@@ -6,7 +6,7 @@ import 'package:lbz/shared/components/constans.dart';
 import 'package:lbz/shared/styles/colors.dart';
 
 class ChatInputField extends StatefulWidget {
-  final String id;
+  final String? id;
   final int user_id;
    ChatInputField({
     Key? key, required this.id, required this.user_id,

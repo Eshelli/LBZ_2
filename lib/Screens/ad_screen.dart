@@ -10,8 +10,11 @@ import 'package:lbz/Logics/fav_logic/fav_controller.dart';
 import 'package:lbz/assets/flaticon_icons.dart';
 import 'package:lbz/models/ads_list.dart';
 import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
 import 'package:lbz/shared/network/remote/contacts.dart';
 import 'package:lbz/shared/styles/colors.dart';
+
+import 'chat/chat_screen.dart';
 
 class AdScreen extends StatefulWidget {
   const AdScreen({Key? key}) : super(key: key);
@@ -23,6 +26,7 @@ class AdScreen extends StatefulWidget {
 class _AdScreenState extends State<AdScreen> {
   var appController = Get.find<AppController>();
   var chatController = Get.find<ChatController>();
+  TextEditingController txtController = TextEditingController();
   bool more = false;
   bool isHidden = true;
   bool show = false;
@@ -365,7 +369,24 @@ class _AdScreenState extends State<AdScreen> {
             button('Call', FlatIcon.phone_call,
                 color1: redDefaultColor, color2: Colors.white),
             button('Chat', FlatIcon.message,onPress: (){
-              chatController.getChatId(appController.appData.adsDetails.user!.id);
+              chatController.getChatId(appController.appData.adsDetails.user!.id).then((value) {
+                if(value == true){
+                  Get.to(
+                      ChatScreen(
+                    id: chatController.chatId.chat!.id,
+                    user_id: chatController.chatId.user.id,
+                  )
+                  );
+                }else{
+                  dialog([
+                    Text('Send your first message'),
+                    defualtTextForm(context, controler: txtController.text, type: TextInputType.text, radius: 3),
+                    Obx((){
+                      return Expanded(child: button('Send', Icons.send));
+                    })
+                  ]);
+                }
+              });
             }),
           ],
         ),

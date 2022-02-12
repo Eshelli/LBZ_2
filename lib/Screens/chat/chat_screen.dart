@@ -11,7 +11,7 @@ import 'package:lbz/shared/styles/colors.dart';
 import 'components/chat_input_field.dart';
 
 class ChatScreen extends StatefulWidget {
-  final String id;
+  final String? id;
   final int user_id;
 
   ChatScreen({Key? key, required this.id, required this.user_id}) : super(key: key);

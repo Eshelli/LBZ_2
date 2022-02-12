@@ -145,23 +145,24 @@ class ChatController extends GetxController {
   }
 
 
-  Future getChatId(id) async {
+  Future<bool?> getChatId(id) async {
     msgIsLoading.value = true;
     dioHelper.getData(url: 'chats/user/$id',).then(
         (value) {
-      return {
-        print(value.data),
-        chatId = GetChatId.fromJson(value.data),
-        update(),
+        print(value.data);
+        chatId = GetChatId.fromJson(value.data);
+        update();
         if(chatId.chat != null){
-          getMSGChats(chatId.chat!.id.toString())
-        },
-        msgIsLoading.value = false,
-
-      };
+          getMSGChats(chatId.chat!.id.toString());
+          msgIsLoading.value = false;
+          return true;
+        };
+        msgIsLoading.value = false;
+        return false;
     }).catchError((onError) {
       msgIsLoading.value = false;
       print(onError.toString());
+      return false;
     });
   }
 
