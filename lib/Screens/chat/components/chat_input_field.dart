@@ -77,7 +77,7 @@ class _ChatInputFieldState extends State<ChatInputField> {
                     if(full == true)
                       TextButton(
                         onPressed: (){
-                          chatController.sendMSG(widget.id, txtController.text,widget.user_id);
+                          chatController.sendMSG(widget.id, txtController.text,-200,widget.user_id,);
                           txtController.text = '';
                         },
                         child: Icon(

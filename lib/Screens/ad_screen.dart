@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:lbz/Logics/app_logic/app_controller.dart';
+import 'package:lbz/Logics/chat_logic/chat_controller.dart';
 import 'package:lbz/Logics/fav_logic/fav_controller.dart';
 import 'package:lbz/assets/flaticon_icons.dart';
 import 'package:lbz/models/ads_list.dart';
@@ -21,6 +22,7 @@ class AdScreen extends StatefulWidget {
 
 class _AdScreenState extends State<AdScreen> {
   var appController = Get.find<AppController>();
+  var chatController = Get.find<ChatController>();
   bool more = false;
   bool isHidden = true;
   bool show = false;
@@ -362,7 +364,9 @@ class _AdScreenState extends State<AdScreen> {
           children: [
             button('Call', FlatIcon.phone_call,
                 color1: redDefaultColor, color2: Colors.white),
-            button('Chat', FlatIcon.message),
+            button('Chat', FlatIcon.message,onPress: (){
+              chatController.getChatId(appController.appData.adsDetails.user!.id);
+            }),
           ],
         ),
       ),
@@ -417,9 +421,9 @@ class _AdScreenState extends State<AdScreen> {
   }
 
   Widget button(String text, IconData icon,
-      {Color color1 = Colors.white, Color color2 = redDefaultColor}) {
+      {Color color1 = Colors.white, Color color2 = redDefaultColor,onPress}) {
     return OutlinedButton.icon(
-      onPressed: () {},
+      onPressed: onPress,
       icon: Icon(icon, size: 30, color: color2),
       style: OutlinedButton.styleFrom(
           backgroundColor: color1,

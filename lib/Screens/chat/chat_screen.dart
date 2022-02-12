@@ -89,7 +89,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             padding: const EdgeInsets.symmetric(vertical: 8.0),
                             child: Align(
                               alignment:
-                                  controller.msgData[index].senderId != widget.user_id
+                                  controller.msgData[index].senderId != widget.user_id ||  controller.msgData[index].senderId == -200
                                       ? Alignment.centerRight
                                       : Alignment.centerLeft,
                               child: TextMessage(

@@ -1,9 +1,13 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:lbz/Screens/chat/chat_screen.dart';
 import 'package:lbz/Screens/chat/models/msg_model.dart';
 import 'package:lbz/Screens/notification/model/notification_model.dart';
 import 'package:lbz/commen_models/errors_models.dart';
+import 'package:lbz/models/get_chat_id.dart';
 import 'package:lbz/shared/components/constans.dart';
+import 'package:lbz/shared/components/varibales_combonents.dart';
 
 import 'models/chat_model.dart';
 
@@ -11,6 +15,7 @@ class ChatController extends GetxController {
   var isLoading = false.obs;
   var msgIsLoading = false.obs;
   late MessageError msg;
+  late GetChatId chatId;
   late Noti notification;
   var unreadCount = 0.obs;
   List<ChatModel> chatModel = [];
@@ -64,18 +69,21 @@ class ChatController extends GetxController {
     });
   }
 
-  Future sendMSG(id, content, int user_id) async {
+  Future sendMSG(id, content, int myId,int user_id) async {
     msgData.insert(
         0,
         MessagesData(
             content: content,
             isRead: 2,
             sentAt: DateTime.now().toString(),
-            senderId: user_id));
+            senderId: myId)
+    );
     update();
     dioHelper.postData(
-        url: 'chats/$id',
-        query: {"content": content, "user_id": user_id}).then((value) {
+        url: id != null ? 'chats/$id' : 'chats',
+        query: {"content": content, "user_id": user_id}
+    ).then((value)
+    {
       if (value.statusCode == 200) {
         print('done');
         ChatData element = chatData.where((element) => element.id == id).first;
@@ -94,7 +102,7 @@ class ChatController extends GetxController {
   }
 
   Future getMSGChats(String id) async {
-    isLoading.value = true;
+    msgIsLoading.value = true;
     msgModel = [];
     msgData = [];
     print(id);
@@ -105,9 +113,10 @@ class ChatController extends GetxController {
           msgData.add(MessagesData.fromJson(element));
         }),
         update(),
-        isLoading.value = false,
+        msgIsLoading.value = false,
       };
     }).catchError((onError) {
+      msgIsLoading.value = false;
       print(onError.toString());
     });
   }
@@ -131,6 +140,27 @@ class ChatController extends GetxController {
           }
       };
     }).catchError((onError) {
+      print(onError.toString());
+    });
+  }
+
+
+  Future getChatId(id) async {
+    msgIsLoading.value = true;
+    dioHelper.getData(url: 'chats/user/$id',).then(
+        (value) {
+      return {
+        print(value.data),
+        chatId = GetChatId.fromJson(value.data),
+        update(),
+        if(chatId.chat != null){
+          getMSGChats(chatId.chat!.id.toString())
+        },
+        msgIsLoading.value = false,
+
+      };
+    }).catchError((onError) {
+      msgIsLoading.value = false;
       print(onError.toString());
     });
   }
