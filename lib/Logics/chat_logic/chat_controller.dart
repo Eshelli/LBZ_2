@@ -1,5 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lbz/Screens/chat/chat_screen.dart';
 import 'package:lbz/Screens/chat/models/msg_model.dart';
@@ -145,24 +146,51 @@ class ChatController extends GetxController {
   }
 
 
-  Future<bool?> getChatId(id) async {
+  Future getChatId(id,BuildContext context) async {
     msgIsLoading.value = true;
     dioHelper.getData(url: 'chats/user/$id',).then(
         (value) {
         print(value.data);
         chatId = GetChatId.fromJson(value.data);
         update();
+
         if(chatId.chat != null){
           getMSGChats(chatId.chat!.id.toString());
           msgIsLoading.value = false;
-          return true;
+          ChatScreen(
+            id: chatId.chat!.id,
+            user_id: chatId.user.id,
+          );
+        }else{
+          TextEditingController txtController = TextEditingController();
+          dialog([
+            Text('Send your first message'),
+            defualtTextForm(context, controler: txtController, type: TextInputType.text, radius: 3),
+            Obx((){
+              if(msgIsLoading.value){
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(child: CircularProgressIndicator(),),
+                );
+              }
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(height: 35,child: button('Send', Icons.send,color1: redDefaultColor,color2: Colors.white,onPress: (){
+                  if(txtController.text.isNotEmpty) {
+                    sendMSG(
+                        null, txtController.text, -200,
+                        chatController.chatId.user.id);
+                    Get.back();
+                  }
+                })),
+              );
+            }),
+          ]);
         };
         msgIsLoading.value = false;
-        return false;
     }).catchError((onError) {
       msgIsLoading.value = false;
       print(onError.toString());
-      return false;
     });
   }
 
